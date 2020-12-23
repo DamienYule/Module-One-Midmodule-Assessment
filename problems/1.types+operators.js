@@ -3,15 +3,13 @@
 * @returns {boolean} - Is val a number
 */
 function isNumber(val) {
-  if (isNaN(val) === true){
-    return false
-  }else if(val === " "){
-    return false
-  }else{
+  if (typeof val === "number") {
     return true
+  } else {
+    return false
   }
- 
 }
+console.log(isNumber(1))
 
 /** Takes in a value and returns whether it is truthy
 * @param {any} val - The input value
@@ -20,9 +18,9 @@ function isNumber(val) {
 function isTruthy(val) {
   if (val) {
     return true
-} else {
+  } else {
     return false
-}
+  }
 }
 
 

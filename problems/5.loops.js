@@ -19,7 +19,7 @@ return array
 function multiplesToOneThousand(num) {
 array = []
  for(i= 0; i <= 1000 ; i += num){
-  array.push(i)
+   array.push(i)
  }
  return array
 }
@@ -33,13 +33,16 @@ array = []
 */
 function powersOfTwo(count) {
 array = []
-for(i= 0; i <= num ; i += 2){
-  
+for(i= 0; i < count ; i += 1){
+array.push(2**i)
 }
+return array 
 }
+console .log(powersOfTwo(6))
 
 module.exports = {
   evenNumbers,
   multiplesToOneThousand,
   powersOfTwo
 }
+

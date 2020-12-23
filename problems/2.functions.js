@@ -22,8 +22,8 @@ function greeting(name) {
 * @modifies {global.globalCount}
 */
 function incrementGlobalCount(val) {
- let globalCount = 0
-   globalCount = val
+ 
+ global.globalCount += val
 
 }
 
